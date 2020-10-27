@@ -42,4 +42,9 @@ public class Human {
         Human human = (Human) obj;
         return human.name == name && human.surname == surname && human.age == age;
     }
+
+    @Override
+    public String toString() {
+        return name+" "+surname+" возраст:"+age;
+    }
 }
