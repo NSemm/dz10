@@ -40,7 +40,7 @@ public class Human {
         if ((obj) == null) return false;
         if (!(obj instanceof Human)) return false;
         Human human = (Human) obj;
-        return human.name == name && human.surname == surname && human.age == age;
+        return name.equals(human.name) &&  name.equals(human.surname) &&  age.equals(human.age);
     }
 
     @Override
